@@ -1,0 +1,30 @@
+# Loading project test_modelsim
+# Compile of majority.v was successful.
+# Compile of majority_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.majority_tb
+# vsim work.majority_tb 
+# Start time: 09:48:52 on Apr 16,2025
+# Loading work.majority_tb
+# Loading work.majority
+add wave -position insertpoint  \
+sim:/majority_tb/a \
+sim:/majority_tb/b \
+sim:/majority_tb/c \
+sim:/majority_tb/y
+run -all
+# A B C | Y
+# 0 0 00
+# 0 0 10
+# 0 1 00
+# 0 1 11
+# 1 0 00
+# 1 0 11
+# 1 1 01
+# 1 1 11
+# ** Note: $finish    : /home/hoangdang/Documents/code_test/majority_tb.v(21)
+#    Time: 80 ns  Iteration: 0  Instance: /majority_tb
+# 1
+# Break in Module majority_tb at /home/hoangdang/Documents/code_test/majority_tb.v line 21
+# End time: 09:56:32 on Apr 16,2025, Elapsed time: 0:07:40
+# Errors: 0, Warnings: 2
