@@ -1,0 +1,10 @@
+*.vcd
+*.out
+*.o
+sim
+*.log
+*~
+*.mti
+*.mpf
+*.wlf
+*.vstf
