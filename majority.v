@@ -5,4 +5,4 @@ module majority(
 );
 
     assign y = ( a & b) | (a & c) | (b & c);
-endmodule
+endmodule // I have made some changes

@@ -18,7 +18,7 @@ module majority_tb;
         $display ("A B C | Y");
         for (i = 0; i < 8; i = i + 1) begin
             {a, b, c} = i[2:0];
-            #20 $display ("%b %b %b %b", a, b, c, y);
+            #30 $display ("%b %b %b %b", a, b, c, y);
         end
         $finish;
     end
